@@ -3,7 +3,7 @@ Console utility to convert cryptopro4 and cryptopro5 certificate (gost-2001, gos
 
 ## build
 <pre>
-Tested on ubuntu 14.04 LTS 64bit
+Tested on ubuntu 20.04 LTS 64bit
 
 prepare.sh -- download,build & install openssl 1.1.1 & gost-engine + cmake
   it takes about 530Mb disk space and 20min to build on my notebook
