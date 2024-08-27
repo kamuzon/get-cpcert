@@ -38,8 +38,8 @@ cd libs/openssl-OpenSSL_1_1_1-stable
 ./config          || die "config openssl"
 make              || die "make openssl"
 sudo make install || die "install openssl"
-sudo ln -s /usr/local/lib/libssl.so.1.1 /lib/x86_64-linux-gnu/libssl.so.1.1       || die "ln libssl"
-sudo ln -s /usr/local/lib/libcrypto.so.1.1 /lib/x86_64-linux-gnu/libcrypto.so.1.1 || die "ln libcrypto"
+sudo ln -fs /usr/local/lib/libssl.so.1.1 /lib/x86_64-linux-gnu/libssl.so.1.1       || die "ln libssl"
+sudo ln -fs /usr/local/lib/libcrypto.so.1.1 /lib/x86_64-linux-gnu/libcrypto.so.1.1 || die "ln libcrypto"
 cd ../..
 }
 
